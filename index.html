@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Метатеги -->
+    <title>Авиакомпания SkyWings - Авиабилеты, чартерные рейсы, грузоперевозки</title>
+    <meta name="description" content="Купить авиабилеты от авиакомпании SkyWings. Выгодные тарифы на пассажирские авиаперевозки, аренда бизнес-джетов и грузовая логистика. Онлайн-бронирование.">
+    <meta name="keywords" content="авиабилеты, авиакомпания, купить билет на самолет, чартер, авиаперевозки, SkyWings">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph (для соцсетей) -->
+    <meta property="og:title" content="SkyWings - Ваш надежный авиаперевозчик">
+    <meta property="og:description" content="Бронируйте авиабилеты онлайн. Более 100 направлений по всему миру.">
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Микроразметка Schema.org для Авиакомпании -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Airline",
+      "name": "SkyWings",
+      "url": "https://skywings.example.com",
+      "logo": "https://skywings.example.com/logo.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+7-800-555-35-35",
+        "contactType": "customer service"
+      }
+    }
+    </script>
+</head>
+<body>
+
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container header-content">
+            <div class="logo">Sky<span>Wings</span></div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#home">Главная</a></li>
+                    <li><a href="#services">Услуги</a></li>
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                </ul>
+            </nav>
+            <a href="#booking" class="btn btn-primary">Купить билет</a>
+        </div>
+    </header>
+
+    <!-- Главный баннер (Hero Section) -->
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <h1>Покоряйте небо вместе с SkyWings</h1>
+            <p>Пассажирские авиаперевозки, чартерные рейсы и грузовая логистика по всему миру.</p>
+            <a href="#booking" class="btn btn-secondary">Забронировать рейс</a>
+        </div>
+    </section>
+
+    <!-- Услуги (Сетка Grid) -->
+    <section id="services" class="services container">
+        <h2>Наши Услуги</h2>
+        <div class="grid">
+            <!-- Карточка 1 -->
+            <div class="card">
+                <img src="https://cdnstatic.rg.ru/uploads/images/2025/05/01/istock-1496407525_3c8.jpg" alt="Пассажирский самолет в небе" class="card-img">
+                <div class="card-content">
+                    <h3>Пассажирские рейсы</h3>
+                    <p>Регулярные и чартерные рейсы в более чем 50 стран мира. Комфортабельные салоны и профессиональный экипаж.</p>
+                </div>
+            </div>
+            <!-- Карточка 2 -->
+            <div class="card">
+                <img src="https://avatars.mds.yandex.net/get-shedevrum/13972232/img_ea3b53d8743011ef9da616d94b55916d/orig" alt="Бизнес-джет на взлетной полосе" class="card-img">
+                <div class="card-content">
+                    <h3>Бизнес-авиация</h3>
+                    <p>Аренда частных самолетов (бизнес-джетов) для VIP-персон и корпоративных клиентов с гибким расписанием.</p>
+                </div>
+            </div>
+            <!-- Карточка 3 -->
+            <div class="card">
+                <img src="https://avatars.mds.yandex.net/i?id=fdd39c8e03bddb73b9c102692c1fc1b4_l-5451548-images-thumbs&n=13" alt="Грузовой самолет и логистика" class="card-img">
+                <div class="card-content">
+                    <h3>Грузоперевозки</h3>
+                    <p>Быстрая и надежная доставка грузов любой сложности. Воздушный транспорт для коммерческих нужд.</p>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Форма бронирования -->
+    <section id="booking" class="booking container">
+        <h2>Поиск авиабилетов</h2>
+        <form class="booking-form" action="#" method="POST">
+            <div class="form-group">
+                <label for="from">Откуда:</label>
+                <input type="text" id="from" name="from" placeholder="Москва" required>
+            </div>
+            <div class="form-group">
+                <label for="to">Куда:</label>
+                <input type="text" id="to" name="to" placeholder="Санкт-Петербург" required>
+            </div>
+            <div class="form-group">
+                <label for="date">Дата вылета:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Найти рейсы</button>
+        </form>
+    </section>
+
+    <!-- Подвал -->
+    <footer id="contacts" class="footer">
+        <div class="container">
+            <p>&copy; 2023 Авиакомпания SkyWings. Все права защищены.</p>
+            <p>Телефон поддержки: 8-800-555-35-35</p>
+        </div>
+    </footer>
+
+</body>
+</html>
